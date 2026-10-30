@@ -39,7 +39,7 @@ dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.130-GTNH:dev")
     runtimeOnlyNonPublishable(rfg.deobf("curse.maven:catalogue-vintage-1465746:8384975"))
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Angelica:2.2.9:dev")
-    runtimeOnlyNonPublishable("dev.dediamondpro.resourcify:VintageResourcify:1.0.5:dev")
+    runtimeOnlyNonPublishable("industries.angelic.vintageresourcify:VintageResourcify:1.0.6:dev")
     runtimeOnlyNonPublishable("industries.angelic.vrap:vrap:1.0.2:dev")
     runtimeOnlyNonPublishable("com.falsepattern:forgelin-mc1.7.10:2.4.3-2.4.10")
 
@@ -48,8 +48,8 @@ dependencies {
     runtimeOnlyNonPublishable("industries.angelic.angellib:AngelLib:1.0.0:dev")
     runtimeOnlyNonPublishable("industries.angelic.wawelauth:WawelAuth:996a655-snapshot:dev")
 
-    // VintageResourcify 1.0.5 links its tooltip events at client startup.
-    runtimeOnlyNonPublishable("com.github.GTNewHorizons:ModularUI2:2.3.88-1.7.10:dev")
+    // VintageResourcify links its tooltip events at client startup.
+    runtimeOnlyNonPublishable("com.github.GTNewHorizons:ModularUI2:2.3.92-1.7.10:dev")
 
     // Compile + runtime
     implementation("com.falsepattern:chunkapi-mc1.7.10:0.8.4:dev")
