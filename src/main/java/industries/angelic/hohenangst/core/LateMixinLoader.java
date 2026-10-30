@@ -33,6 +33,7 @@ public final class LateMixinLoader implements ILateMixinLoader {
                     "MixinAngelicaWorldSlice",
                     "MixinAngelicaClonedSection"));
         if (loadedMods.contains("poppeteer")) result.add("MixinPoppeteerQueries");
+        if (loadedMods.contains("distanthorizons")) result.add("MixinDistantHorizonsChunkHeight");
         // Planted saplings grow whole trees above 256 (PlantedGrowthHeights), on the audited builds only.
         if (PlantedGrowthHeights.naturaMixins(loadedMods, version(loadedMods.contains("Natura") ? "Natura" : "natura")))
             result.addAll(
