@@ -1,0 +1,31 @@
+{
+  "modListVersion": 2,
+  "modList": [
+    {
+      "modid": "${modId}",
+      "name": "${modName}",
+      "description": "Extends Minecraft 1.7.10 world height to 512 blocks.",
+      "version": "${modVersion}",
+      "mcversion": "${minecraftVersion}",
+      "url": "https://github.com/AngelicIndustries/Hohenangst",
+      "updateUrl": "",
+      "authorList": [
+        "Angelic Industries"
+      ],
+      "credits": "GTNH ExampleMod",
+      "logoFile": "assets/hohenangst/icon.png",
+      "screenshots": [],
+      "parent": "",
+      "requiredMods": [
+        "chunkapi",
+        "unimixins"
+      ],
+      "dependencies": [
+        "chunkapi",
+        "unimixins"
+      ],
+      "dependants": [],
+      "useDependencyInformation": false
+    }
+  ]
+}

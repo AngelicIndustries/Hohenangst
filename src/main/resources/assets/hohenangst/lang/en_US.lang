@@ -1,0 +1,2 @@
+hohenangst.config.debugMode=Debug logging
+hohenangst.config.debugMode.tooltip=Log compatibility details at startup.

@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8.7-GTNH",
+  "package": "industries.angelic.hohenangst.mixins.early",
+  "refmap": "mixins.hohenangst.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "plugin": "industries.angelic.hohenangst.core.MergedMixinCompatibility"
+}
