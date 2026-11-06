@@ -52,8 +52,10 @@ public final class EarlyMixinLoader implements IEarlyMixinLoader, IFMLLoadingPlu
                     "MixinChunkCacheLighting",
                     "MixinClientChunkHeightmap"));
         else result.add("MixinDedicatedServer");
+        // Angelica and Beddium replace the vanilla terrain renderer; late mixins give theirs the height.
         if (FMLLaunchHandler.side()
-            .isClient() && !loadedCoreMods.contains("com.gtnewhorizons.angelica.loading.AngelicaTweaker"))
+            .isClient() && !loadedCoreMods.contains("com.gtnewhorizons.angelica.loading.AngelicaTweaker")
+            && !loadedCoreMods.contains("com.ventooth.beddium.asm.CoreLoadingPlugin"))
             result.addAll(Arrays.asList("MixinRenderGlobal", "MixinRenderGlobalHeight"));
         return result;
     }

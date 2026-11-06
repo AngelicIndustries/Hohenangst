@@ -65,6 +65,12 @@ Development-only mods are excluded from Hohenangst's published dependencies.
   `hohenangst:height` warning before chunk loading. Cancelling the warning left
   all 14 existing region files unchanged (SHA-256 comparison).
 
+Beddium, 2026-11-06: the release-jar Java 8 client with Beddium 1.2.5-j8 in place of
+Angelica crashed at startup with 6a502ba (both mods change the first 16 in
+`RenderGlobal.loadRenderers`; Mixin keeps the higher priority and Beddium's required
+injection fails). With the fix it rendered the section gallery from Y=0 to the 496
+section, and breaking blocks at Y=416..417 updated the picture.
+
 Client graphics checks used Mesa llvmpipe (OpenGL 4.6). This verifies rendering
 correctness in that environment, not performance or every GPU/shaderpack.
 

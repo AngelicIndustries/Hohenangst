@@ -32,6 +32,9 @@ public final class LateMixinLoader implements ILateMixinLoader {
                     "MixinAngelicaSections",
                     "MixinAngelicaWorldSlice",
                     "MixinAngelicaClonedSection"));
+        if (FMLLaunchHandler.side()
+            .isClient() && loadedMods.contains("beddium"))
+            result.addAll(Arrays.asList("MixinBeddiumSections", "MixinBeddiumRenderer"));
         if (loadedMods.contains("poppeteer")) result.add("MixinPoppeteerQueries");
         if (loadedMods.contains("distanthorizons")) result.add("MixinDistantHorizonsChunkHeight");
         // Planted saplings grow whole trees above 256 (PlantedGrowthHeights), on the audited builds only.

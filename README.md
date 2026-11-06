@@ -22,7 +22,7 @@ Biomic is not required; its companion integration is deferred.
 
 Planted saplings of Natura (2.8.19, 2.8.24) and HarvestCraft (1.3.13-GTNH) grow whole trees above Y=255.
 
-Tested with Angelica + BSL shaders and the usual compatibility stack; see
+Tested with Angelica + BSL shaders, with Beddium 1.2.5, and the usual compatibility stack; see
 [verification notes](docs/verification.md) for versions and limits.
 Back up existing worlds before conversion. Removing the mod cannot preserve blocks above Y=255.
 

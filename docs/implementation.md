@@ -21,7 +21,9 @@ vanilla renderer limits. Late mixins adapt ChunkAPI/EndlessIDs codecs and Angeli
 renderer, world slice, section manager and coordinate clamp. Renderer startup
 clamps its camera-section readiness lookup so reconnects and shader reloads above
 the ceiling do not wait forever. World-slice overrides select both MCP and SRG
-method names in the optional mod integration. Optional Poppeteer
+method names in the optional mod integration. Beddium gets 32 sections in its section
+manager and the 512 top in its box culling; under either renderer the vanilla renderer
+mixins stay off, since the vanilla terrain renderer is replaced. Optional Poppeteer
 queries can inspect the entire height. Shader terrain uses Angelica's normal mesh
 pipeline; no shaderpack source changes are necessary.
 
