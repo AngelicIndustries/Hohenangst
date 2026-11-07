@@ -18,7 +18,9 @@ import industries.angelic.hohenangst.network.ColumnCodec;
 @Pseudo
 @Mixin(
     targets = { "com.falsepattern.chunk.internal.vanilla.BlockIDManager",
-        "com.falsepattern.chunk.internal.vanilla.NibbleManager" },
+        "com.falsepattern.chunk.internal.vanilla.NibbleManager",
+        // Supernova's colored light, synced through ChunkAPI like the vanilla data.
+        "com.mitchej123.supernova.storage.AbstractSupernovaDataManager" },
     remap = false)
 public abstract class MixinSectionCodecs {
 

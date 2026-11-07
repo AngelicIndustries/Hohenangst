@@ -29,6 +29,8 @@ public final class Hohenangst {
         cpw.mods.fml.common.FMLCommonHandler.instance()
             .bus()
             .register(new Config());
+        if (cpw.mods.fml.common.Loader.isModLoaded("supernova"))
+            industries.angelic.hohenangst.compat.SupernovaBounds.apply();
         LOG.info("Hohenangst loaded: 512 blocks, Y=0..511.");
     }
 

@@ -43,6 +43,9 @@ public final class EarlyMixinLoader implements IEarlyMixinLoader, IFMLLoadingPlu
                 "MixinAnvilCompatibility",
                 "MixinBoundaryChecks",
                 "MixinPhosphorQueue"));
+        // Supernova replaces vanilla's relighting with its own engine, which WorldUtil bounds make height-aware.
+        if (!loadedCoreMods.contains("com.mitchej123.supernova.core.SupernovaCore"))
+            result.add("MixinChunkVanillaLighting");
         if (FMLLaunchHandler.side()
             .isClient())
             result.addAll(
